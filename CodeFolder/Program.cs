@@ -7,6 +7,19 @@
 
     System.Console.WriteLine(s);
 
+    string[] arr = SplitStringToArray(s);
+
+    System.Console.WriteLine(String.Join(", ", arr));
+
+}
+
+string[] SplitStringToArray(string s)
+{
+    char[] separators = new char[] { ' ', '.', ',', '!', ';', '?' };
+
+    string[] subS = s.Split(separators, StringSplitOptions.RemoveEmptyEntries);
+
+    return subS;
 }
 
 string EnterString(string welcomeToInput)
