@@ -1,13 +1,14 @@
 ﻿void Main()
 {
-    System.Console.WriteLine("Программа разложит введённую строку на массив из слов," +
-    " \nа затем выведет те элементы массива, длинна которых меньше или равны числу, которое будет указано далее.");
+    Console.Clear();
+    System.Console.WriteLine("Программа разложит введённую строку на массив из слов, а затем выведет те элементы массива," +
+    " \nдлина которых меньше или равна числу, которое будет указано далее.");
 
-    string s = EnterString("Введите строку: ");
-    string[] arr = SplitStringToArray(s);
+    string inputedStr = EnterString("Введите строку: ");
+    string[] arrayFromStr = SplitStringToArray(inputedStr);
     int countSrt = EnterCount("Введите длинну строки для отбора: ");
-    string[] selectedArr = SelectArr(arr, countSrt);
-    PrintArray(arr);
+    string[] selectedArr = SelectArr(arrayFromStr, countSrt);
+    PrintArray(arrayFromStr);
     System.Console.Write(" -> ");
     PrintArray(selectedArr);
 }
@@ -44,20 +45,20 @@ int EnterCount(string welcomeToInput)
 
 string[] SelectArr(string[] arr, int l)
 {
-    int[] selectIndexs = new int[arr.Length];
+    int[] selectIndexs = new int[arr.Length]; // массив для хранения нужных нам индексов
     int count = 0;
     for (int i = 0; i < arr.Length; i++)
     {
-        if (arr[i].Length <= l)
+        if (arr[i].Length <= l)            // отбор по условию
             selectIndexs[count++] = i;
     }
 
-    string[] selArr = new string[count];
+    string[] selectedStringsArray = new string[count];  // нужный нам массив, его вернёт функция
     for (int j = 0; j < count; j++)
     {
-        selArr[j] = arr[selectIndexs[j]];
+        selectedStringsArray[j] = arr[selectIndexs[j]];
     }
-    return selArr;
+    return selectedStringsArray;
 }
 
 void PrintArray(string[] arr)
@@ -68,7 +69,6 @@ void PrintArray(string[] arr)
         System.Console.Write('\u0022' + arr[i] + '\u0022' + (i < arr.Length - 1 ? ", " : ""));
     }
     System.Console.Write("]");
-
 }
 
 Main();
