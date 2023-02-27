@@ -9,14 +9,12 @@
 
     string[] arr = SplitStringToArray(s);
 
-    System.Console.WriteLine(String.Join(", ", arr));
+    PrintArray(arr);
 
     int countSrt = EnterCount("Введите длинну строки для отбора: ");
-    System.Console.WriteLine(countSrt);
 
     string[] selectedArr = SelectArr(arr, countSrt);
-    System.Console.WriteLine(String.Join(", ", selectedArr));
-
+    PrintArray(selectedArr);
 
 }
 
@@ -68,6 +66,18 @@ string[] SelectArr(string[] arr, int l)
         selArr[j] = arr[selectIndexs[j]];
     }
     return selArr;
+}
+
+void PrintArray(string[] arr)
+{
+    System.Console.Write("[");
+    for (int i = 0; i < arr.Length; i++)
+    {
+        System.Console.Write('\u0022' + arr[i] + '\u0022' + (i < arr.Length - 1 ? ", " : ""));
+        //System.Console.Write(i<arr.Length-1?", ":"");
+    }
+    System.Console.WriteLine("]");
+
 }
 
 Main();
