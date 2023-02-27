@@ -3,19 +3,13 @@
     System.Console.WriteLine("Программа разложит введённую строку на массив из слов," +
     " \nа затем выведет те элементы массива, длинна которых меньше или равны числу, которое будет указано далее.");
 
-    string s = EnterString("Введите строку: "); // "12 34 56 78";
-
-    System.Console.WriteLine(s);
-
+    string s = EnterString("Введите строку: ");
     string[] arr = SplitStringToArray(s);
-
-    PrintArray(arr);
-
     int countSrt = EnterCount("Введите длинну строки для отбора: ");
-
     string[] selectedArr = SelectArr(arr, countSrt);
+    PrintArray(arr);
+    System.Console.Write(" -> ");
     PrintArray(selectedArr);
-
 }
 
 string[] SplitStringToArray(string s)
@@ -55,9 +49,7 @@ string[] SelectArr(string[] arr, int l)
     for (int i = 0; i < arr.Length; i++)
     {
         if (arr[i].Length <= l)
-        {
             selectIndexs[count++] = i;
-        }
     }
 
     string[] selArr = new string[count];
@@ -74,9 +66,8 @@ void PrintArray(string[] arr)
     for (int i = 0; i < arr.Length; i++)
     {
         System.Console.Write('\u0022' + arr[i] + '\u0022' + (i < arr.Length - 1 ? ", " : ""));
-        //System.Console.Write(i<arr.Length-1?", ":"");
     }
-    System.Console.WriteLine("]");
+    System.Console.Write("]");
 
 }
 
