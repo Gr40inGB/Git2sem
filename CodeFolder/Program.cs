@@ -14,6 +14,10 @@
     int countSrt = EnterCount("Введите длинну строки для отбора: ");
     System.Console.WriteLine(countSrt);
 
+    string[] selectedArr = SelectArr(arr, countSrt);
+    System.Console.WriteLine(String.Join(", ", selectedArr));
+
+
 }
 
 string[] SplitStringToArray(string s)
@@ -28,6 +32,7 @@ string EnterString(string welcomeToInput)
     System.Console.Write(welcomeToInput);
     return Console.ReadLine()!;
 }
+
 int EnterCount(string welcomeToInput)
 {
     bool inputOk = false;
@@ -43,6 +48,26 @@ int EnterCount(string welcomeToInput)
             System.Console.Write("Вы ввели не число. ");
     }
     return count;
+}
+
+string[] SelectArr(string[] arr, int l)
+{
+    int[] selectIndexs = new int[arr.Length];
+    int count = 0;
+    for (int i = 0; i < arr.Length; i++)
+    {
+        if (arr[i].Length <= l)
+        {
+            selectIndexs[count++] = i;
+        }
+    }
+
+    string[] selArr = new string[count];
+    for (int j = 0; j < count; j++)
+    {
+        selArr[j] = arr[selectIndexs[j]];
+    }
+    return selArr;
 }
 
 Main();
