@@ -1,0 +1,15 @@
+C:\Users\User\Desktop\SemCSharp\Final1quarterS\CodeFolder\bin\Debug\net7.0\CodeFolder.exe
+C:\Users\User\Desktop\SemCSharp\Final1quarterS\CodeFolder\bin\Debug\net7.0\CodeFolder.deps.json
+C:\Users\User\Desktop\SemCSharp\Final1quarterS\CodeFolder\bin\Debug\net7.0\CodeFolder.runtimeconfig.json
+C:\Users\User\Desktop\SemCSharp\Final1quarterS\CodeFolder\bin\Debug\net7.0\CodeFolder.dll
+C:\Users\User\Desktop\SemCSharp\Final1quarterS\CodeFolder\bin\Debug\net7.0\CodeFolder.pdb
+C:\Users\User\Desktop\SemCSharp\Final1quarterS\CodeFolder\obj\Debug\net7.0\CodeFolder.csproj.AssemblyReference.cache
+C:\Users\User\Desktop\SemCSharp\Final1quarterS\CodeFolder\obj\Debug\net7.0\CodeFolder.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\User\Desktop\SemCSharp\Final1quarterS\CodeFolder\obj\Debug\net7.0\CodeFolder.AssemblyInfoInputs.cache
+C:\Users\User\Desktop\SemCSharp\Final1quarterS\CodeFolder\obj\Debug\net7.0\CodeFolder.AssemblyInfo.cs
+C:\Users\User\Desktop\SemCSharp\Final1quarterS\CodeFolder\obj\Debug\net7.0\CodeFolder.csproj.CoreCompileInputs.cache
+C:\Users\User\Desktop\SemCSharp\Final1quarterS\CodeFolder\obj\Debug\net7.0\CodeFolder.dll
+C:\Users\User\Desktop\SemCSharp\Final1quarterS\CodeFolder\obj\Debug\net7.0\refint\CodeFolder.dll
+C:\Users\User\Desktop\SemCSharp\Final1quarterS\CodeFolder\obj\Debug\net7.0\CodeFolder.pdb
+C:\Users\User\Desktop\SemCSharp\Final1quarterS\CodeFolder\obj\Debug\net7.0\CodeFolder.genruntimeconfig.cache
+C:\Users\User\Desktop\SemCSharp\Final1quarterS\CodeFolder\obj\Debug\net7.0\ref\CodeFolder.dll
