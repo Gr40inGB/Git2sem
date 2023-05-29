@@ -11,12 +11,15 @@
     PrintArray(arrayFromStr);
     System.Console.Write(" -> ");
     PrintArray(selectedArr);
+
 }
 
 string[] SplitStringToArray(string s)
 {
     char[] separators = new char[] { ' ', '.', ',', '!', ';', '?' };
+
     string[] subS = s.Split(separators, StringSplitOptions.RemoveEmptyEntries);
+
     return subS;
 }
 
