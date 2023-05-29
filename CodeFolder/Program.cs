@@ -21,6 +21,11 @@ string[] SplitStringToArray(string s)
     string[] subS = s.Split(separators, StringSplitOptions.RemoveEmptyEntries);
 
     return subS;
+
+    string s = EnterString("Введите строку: "); // "12 34 56 78";
+
+    System.Console.WriteLine(s);
+
 }
 
 string EnterString(string welcomeToInput)
